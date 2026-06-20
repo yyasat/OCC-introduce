@@ -18,6 +18,10 @@
     --text-dim: #7A6B8A;
     --accent: #8B7A9E;
     --shadow: rgba(123, 107, 133, 0.2);
+
+    /* 互补强调色 */
+    --accent-gold: #D4A656;
+    --accent-pink: #C97B92;
 }
 
 body {
@@ -99,8 +103,8 @@ body {
 }
 
 .nav-menu a:hover {
-    color: var(--accent);
-    border: 2px solid var(--primary-purple);
+    color: var(--accent-pink);
+    border: 2px solid var(--accent-pink);
     background: var(--bg-darker);
 }
 
@@ -164,7 +168,7 @@ h1 {
     font-size: 1.5rem;
     color: var(--accent);
     margin-bottom: 1.5rem;
-    text-shadow: 3px 3px 0 var(--dark-purple);
+    text-shadow: 2px 2px 0 var(--dark-purple), 4px 4px 0 var(--accent-gold);
     letter-spacing: 3px;
 }
 
@@ -208,6 +212,7 @@ h1 {
 .character-card:hover {
     transform: translate(-4px, -4px);
     box-shadow: 10px 10px 0 var(--shadow);
+    border-color: var(--accent-gold);
 }
 
 .card-header {
@@ -220,7 +225,7 @@ h1 {
 }
 
 .card-icon {
-    color: var(--accent);
+    color: var(--accent-gold);
     font-size: 0.8rem;
 }
 
@@ -293,7 +298,8 @@ h1 {
 }
 
 .pixel-btn:hover {
-    background: var(--accent);
+    background: var(--accent-gold);
+    color: var(--text-light);
     transform: translate(2px, 2px);
     box-shadow: 2px 2px 0 var(--dark-purple);
 }
@@ -340,7 +346,7 @@ h1 {
 
 .footer-text {
     margin-top: 0.5rem;
-    color: var(--accent);
+    color: var(--accent-pink);
 }
 
 /* Responsive */
